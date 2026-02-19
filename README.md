@@ -1,1 +1,2 @@
-# Task-0000-algoritms
+# Task-0000-algoritm 
+Это мой код и все задачки
