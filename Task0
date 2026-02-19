@@ -2,22 +2,15 @@ import java.util.Scanner;
 
 public class Task0 {
     public static void main(String[] args) {
-
         Scanner sc = new Scanner(System.in);
-         if (sc.hasNextLine()) {
-            String line = sc.nextLine();
+        String line = sc.nextLine().trim();
 
-            if (line.isEmpty()) {
-                System.out.println(0);
-            }
-
-             else {
-                String[] words = line.split("\\s+");
-                System.out.println(words.length);
-            }
+        if (line.isEmpty()) {
+            System.out.println(0);
+        } else {
+            System.out.println(line.split("\\s+").length);
         }
 
         sc.close();
-        
     }
 }
