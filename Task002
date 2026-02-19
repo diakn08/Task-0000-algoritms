@@ -1,0 +1,22 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        String directions = scanner.nextLine();
+
+        int x = 0, y = 0;
+
+        for (char direction : directions.toCharArray()) {
+            switch (direction) {
+                case 'N': y++; break;
+                case 'S': y--; break;
+                case 'E': x++; break;
+                case 'W': x--; break;
+            }
+        }
+
+        System.out.println(x + " " + y);
+        scanner.close();
+    }
+}
